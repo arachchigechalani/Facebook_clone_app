@@ -1,0 +1,14 @@
+{
+  "name": "facebook_clone_app",
+  "version": "1.0.0",
+  "description": "this is assignment-02 expressJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chalani",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
