@@ -1,28 +1,29 @@
 const { ObjectId } = require('mongodb')
 const mongoose=require('mongoose')
 
-const userSchema=new mongoose.Schema({
+const postSchema=new mongoose.Schema({
 
-    firstName : {
+    userId : {
+        type: ObjectId,
+        required: true
+    },
+    date : {
         type: String,
         required: true
     },
-    surname : {
-        type: String,
-        required: true
-    },
-    gender : {
+    time : {
         type: String,
         required :  true,
     },
-    dateOfBirth: {
+    title: {
         type :  String,
         required : true
     },
-    phoneNumber: {
-        type : String,
+    body: {
+        type : Object,
         required : true
     }
 
+
 })
-module.exports=mongoose.model('User',userSchema)
+module.exports=mongoose.model('Post',postSchema)
